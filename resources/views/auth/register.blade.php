@@ -1,5 +1,5 @@
 @extends('layouts.login')
-@section('title', 'الدخول')
+@section('title', 'إنشاء حساب جديد')
 @section('content')
     <section class="flexbox-container">
         <div class="col-12 d-flex align-items-center justify-content-center">
@@ -69,12 +69,15 @@
                                 </fieldset>
 
                                 <div class="flex items-center justify-end ">
+
+
                                     <a class="underline text-sm text-gray-600 hover:text-gray-900"
                                         href="{{ route('login') }}">
-                                        {{ __('Already registered?') }}
+                                        هل عندك حساب ؟
                                     </a>
 
-                                    <button type="submit" class="btn btn-info btn-lg btn-block"><i class="ft-unlock"></i>
+                                    <button type="submit" class="btn btn-info btn-lg btn-block mt-1"><i
+                                            class="ft-unlock"></i>
                                         تسجيل
                                     </button>
                                 </div>

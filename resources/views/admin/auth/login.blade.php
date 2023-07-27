@@ -1,5 +1,5 @@
 @extends('layouts.login')
-@section('title', 'الدخول')
+@section('title', 'تسجيل دخول لوحه التحكم')
 @section('content')
     <section class="flexbox-container">
         <div class="col-12 d-flex align-items-center justify-content-center">
@@ -13,7 +13,7 @@
                             </div>
                         </div>
                         <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
-                            <span>الدخول للوحة التحكم </span>
+                            <span>الدخول للوحة التحكم</span>
                         </h6>
                     </div>
                     @include('admin.includes.alerts.errors')
@@ -25,7 +25,7 @@
                                 @csrf
                                 <fieldset class="form-group position-relative has-icon-left mb-2">
                                     <input type="text" name="email" class="form-control form-control-lg input-lg"
-                                        value="{{ old('email') }}" id="email" placeholder="أدخل البريد الالكتروني ">
+                                        id="email" placeholder="أدخل البريد الالكتروني " value="{{ old('email') }}">
                                     <div class="form-control-position">
                                         <i class="ft-user"></i>
                                     </div>
@@ -43,7 +43,14 @@
                                     @error('password')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
+
+                                    @if (Session::has('authentication_failed'))
+                                        {{-- <span class="text-danger">{{ Session::get('authentication_failed') }}</span> --}}
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ Session::get('authentication_failed') }}</div>
+                                    @endif()
                                 </fieldset>
+
                                 <div class="form-group row">
                                     <div class="col-md-6 col-12 text-center text-md-left">
                                         <fieldset>

@@ -12,7 +12,7 @@
 
 
 
-    <title>Prestashop_Savemart</title>
+    <title>Souq.net</title>
     <meta name="description" content="المتجر مدعوم من طرف بريستاشوب">
     <meta name="keywords" content="">
 
@@ -454,9 +454,11 @@
                         </div>
                     </div>
                     <div class="links-currency" data-target="#box-currency" data-titlebox="Currency">
-                        <span>Currency</span><i class="zmdi zmdi-arrow-right"></i></div>
+                        <span>Currency</span><i class="zmdi zmdi-arrow-right"></i>
+                    </div>
                     <div class="links-language" data-target="#box-language" data-titlebox="Language">
-                        <span>Language</span><i class="zmdi zmdi-arrow-right"></i></div>
+                        <span>Language</span><i class="zmdi zmdi-arrow-right"></i>
+                    </div>
                 </div>
             </div>
             <div id="box-currency" class="box-content d-flex">

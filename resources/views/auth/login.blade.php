@@ -31,7 +31,6 @@
                                     @error('email')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
-
                                 </fieldset>
                                 <fieldset class="form-group position-relative has-icon-left">
                                     <input type="password" name="password" class="form-control form-control-lg input-lg"
